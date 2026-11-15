@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Your stay details and local guide for Maison Soleil in Cassis."
+    />
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Bienvenue, Lucia | Best Hotel Ever On Dhaka</title>
+  </head>
+  <body class="min-h-screen min-w-[320px] bg-[#fbf7f0] font-sans text-[#2b2620] antialiased">
+    <aside class="fixed inset-y-0 left-0 z-10 flex w-[204px] flex-col border-r border-[#e7e0d7] bg-[#fbf7f0] px-3 py-3 max-md:sticky max-md:inset-auto max-md:w-full max-md:border-r-0 max-md:border-b max-md:px-3.5 max-md:py-2 print:hidden">
+      <a class="flex min-h-12 items-start border-b border-[#e7e0d7] pb-3 max-md:min-h-0 max-md:items-center max-md:border-0 max-md:pb-0" href="#top" aria-label="Maison Soleil home">
+        <img class="h-[42px] w-[107px] max-md:h-auto max-md:w-[91px]" src="./images/logo.svg" alt="Maison Soleil" />
+      </a>
+
+      <nav class="grid gap-[3px] pt-[13px] max-md:flex max-md:gap-1 max-md:overflow-x-auto max-md:pt-[7px] max-md:[scrollbar-width:none] [&::-webkit-scrollbar]:hidden" aria-label="Guest guide">
+        <a class="is-active flex min-h-[34px] items-center gap-[9px] rounded-[9px] px-[9px] py-[6px] text-xs text-[#5d554c] transition-colors hover:bg-white hover:text-[#2b2620] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b7411b] max-md:min-h-[31px] max-md:flex-none max-md:gap-[6px] max-md:px-2 max-md:py-[5px] max-md:text-[11px] [&.is-active]:bg-white [&.is-active]:text-[#2b2620]" href="#stay" aria-current="page">
+          <img class="h-[15px] w-[15px]" src="./images/icon-bed.svg" alt="" />
+          <span>Your stay</span>
+          <span class="ml-auto grid h-[13px] w-[13px] place-items-center rounded-full bg-[#b7411b] text-[9px] leading-none text-white max-md:hidden" aria-label="1 update">1</span>
+        </a>
+        <a class="flex min-h-[34px] items-center gap-[9px] rounded-[9px] px-[9px] py-[6px] text-xs text-[#5d554c] transition-colors hover:bg-white hover:text-[#2b2620] max-md:min-h-[31px] max-md:flex-none max-md:gap-[6px] max-md:px-2 max-md:py-[5px] max-md:text-[11px]" href="#arrival">
+          <img class="h-[15px] w-[15px]" src="./images/icon-house.svg" alt="" />
+          <span>The house</span>
+        </a>
+        <a class="flex min-h-[34px] items-center gap-[9px] rounded-[9px] px-[9px] py-[6px] text-xs text-[#5d554c] transition-colors hover:bg-white hover:text-[#2b2620] max-md:min-h-[31px] max-md:flex-none max-md:gap-[6px] max-md:px-2 max-md:py-[5px] max-md:text-[11px]" href="#around-town">
+          <img class="h-[15px] w-[15px]" src="./images/icon-pin.svg" alt="" />
+          <span>Around town</span>
+        </a>
+        <a class="flex min-h-[34px] items-center gap-[9px] rounded-[9px] px-[9px] py-[6px] text-xs text-[#5d554c] transition-colors hover:bg-white hover:text-[#2b2620] max-md:min-h-[31px] max-md:flex-none max-md:gap-[6px] max-md:px-2 max-md:py-[5px] max-md:text-[11px]" href="#breakfast">
+          <img class="h-[15px] w-[15px]" src="./images/icon-breakfast-outline.svg" alt="" />
+          <span>Breakfast</span>
+        </a>
+        <a class="flex min-h-[34px] items-center gap-[9px] rounded-[9px] px-[9px] py-[6px] text-xs text-[#5d554c] transition-colors hover:bg-white hover:text-[#2b2620] max-md:min-h-[31px] max-md:flex-none max-md:gap-[6px] max-md:px-2 max-md:py-[5px] max-md:text-[11px]" href="#top">
+          <img class="h-[15px] w-[15px]" src="./images/icon-mail.svg" alt="" />
+          <span>Messages</span>
+        </a>
+      </nav>
+
+      <section class="relative mt-auto min-h-[82px] overflow-hidden rounded-[13px] border border-[#efdc9b] bg-gradient-to-br from-[#f8e6a3] to-[#f2d785] px-3 py-[11px] max-md:hidden" aria-label="Today's weather in Cassis">
+        <img class="absolute -right-[15px] -top-[25px] w-[82px] opacity-65" src="./images/icon-weather.svg" alt="" />
+        <p class="relative font-mono text-[9px] uppercase tracking-[0.14em] text-[#6f6040]">Today in Cassis</p>
+        <p class="relative mt-0.5 font-serif text-[25px] leading-none">27°</p>
+        <p class="relative mt-[5px] text-[10px] text-[#6f6040]">Sunny · light breeze</p>
+      </section>
+
+      <footer class="grid gap-[7px] px-px pt-4 font-mono text-[8px] uppercase leading-[1.6] tracking-[0.09em] text-[#898176] max-md:hidden">
+        <p>Est. 1987</p>
+        <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+        <p>© 2026 Maison Soleil</p>
+      </footer>
+    </aside>
+
+    <main class="ml-[204px] min-h-screen w-[calc(100%-204px)] px-8 py-6 max-lg:ml-[184px] max-lg:w-[calc(100%-184px)] max-lg:px-5 max-md:ml-0 max-md:min-h-0 max-md:w-full max-md:px-5 max-md:py-5 print:ml-0 print:w-full print:p-0">
+      <header class="flex min-h-[75px] items-center justify-between gap-5 max-sm:items-start max-sm:flex-col max-sm:gap-3 max-sm:pb-3">
+        <div>
+          <p class="font-mono text-[9px] uppercase leading-[1.5] tracking-[0.14em] text-[#827a70]">Booking · Confirmed</p>
+          <h1 class="mt-[3px] font-serif text-[clamp(29px,3.2vw,35px)] font-medium leading-[1.15] tracking-[-0.035em] max-sm:text-[31px]">
+            Bienvenue, <em class="font-medium text-[#b7411b]">Lucia.</em>
+          </h1>
+        </div>
+        <div class="flex items-center gap-[11px] max-sm:w-full print:hidden">
+          <button class="inline-flex min-h-8 items-center justify-center rounded-full border border-[#e7e0d7] px-[14px] text-[11px] font-semibold transition-transform hover:-translate-y-px hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b7411b] max-sm:min-h-[35px]" id="print-receipt" type="button">
+            Print receipt
+          </button>
+          <a class="inline-flex min-h-8 items-center justify-center rounded-full bg-[#2b2620] px-[14px] text-[11px] font-semibold text-white transition-transform hover:-translate-y-px hover:bg-[#493b31] max-sm:min-h-[35px]" href="https://calendar.google.com/calendar" target="_blank" rel="noopener noreferrer">
+            Add to calendar
+          </a>
+        </div>
+      </header>
+
+      <section class="mt-[3px]" id="stay" aria-label="Your booking">
+        <div class="group relative mx-auto h-[365px] w-full max-w-[790px] [perspective:1000px] max-sm:flex max-sm:h-auto max-sm:min-h-0 max-sm:flex-col max-sm:items-center max-sm:gap-3 max-sm:py-[5px] print:flex print:h-auto print:justify-center">
+          <article class="absolute left-[8%] top-[26px] z-[1] flex h-[326px] w-[min(43%,338px)] rotate-[-4deg] flex-col rounded-[18px] border border-[#3e2f1f]/[0.07] bg-gradient-to-br from-[#fffdfa] to-white px-[21px] py-5 shadow-[0_13px_30px_rgba(67,45,28,0.11)] transition-transform duration-500 ease-out group-hover:-translate-x-3 group-hover:translate-y-1 group-hover:rotate-[-8deg] max-lg:left-[5%] max-md:left-[4%] max-md:w-[45%] max-sm:relative max-sm:inset-auto max-sm:h-[326px] max-sm:w-full max-sm:max-w-[350px] max-sm:rotate-[-2deg] max-sm:group-hover:translate-x-0 max-sm:group-hover:translate-y-0 max-sm:group-hover:rotate-[-2deg] print:static print:h-[326px] print:w-[400px] print:max-w-full print:rotate-0 print:shadow-none motion-reduce:transition-none">
+            <header class="flex items-start justify-between">
+              <span class="font-mono text-[9px] uppercase leading-[1.5] tracking-[0.14em] text-[#827a70]">Receipt</span>
+              <span class="text-right font-mono text-[9px] uppercase leading-[1.6] tracking-[0.08em] text-[#827a70]">No. MS-2026<br />0421-AH</span>
+            </header>
+            <h2 class="mb-2 mt-[3px] font-serif text-xl font-medium leading-[1.2]">Your stay</h2>
+            <div class="grid grid-cols-2 gap-3 border-y border-dashed border-[#ded7ce] py-[11px]">
+              <div class="grid justify-items-start gap-0.5">
+                <span class="font-mono text-[9px] uppercase leading-[1.5] tracking-[0.14em] text-[#827a70]">Check in</span>
+                <strong class="font-serif text-2xl font-medium leading-[1.1] tracking-[-0.04em]">25 Apr</strong>
+                <span class="text-[9px] text-[#827a70]">Saturday · 15:00</span>
+              </div>
+              <div class="grid justify-items-start gap-0.5">
+                <span class="font-mono text-[9px] uppercase leading-[1.5] tracking-[0.14em] text-[#827a70]">Check out</span>
+                <strong class="font-serif text-2xl font-medium leading-[1.1] tracking-[-0.04em]">29 Apr</strong>
+                <span class="text-[9px] text-[#827a70]">Wednesday · 11:00</span>
+              </div>
+            </div>
+            <div class="grid gap-[7px] border-b border-[#d5ccc1] py-[11px] text-[10px]">
+              <p class="m-0 flex justify-between gap-2"><span>Room · La Garrigue × 4 nights</span><span class="whitespace-nowrap font-mono text-[9px]">€ 620.00</span></p>
+              <p class="m-0 flex justify-between gap-2"><span>Breakfast × 2 guests</span><span class="whitespace-nowrap font-mono text-[9px]">€ 96.00</span></p>
+              <p class="m-0 flex justify-between gap-2"><span>Tourist tax</span><span class="whitespace-nowrap font-mono text-[9px]">€ 14.40</span></p>
+            </div>
+            <div class="flex items-center justify-between pt-[7px]">
+              <span class="font-mono text-[9px] uppercase leading-[1.5] tracking-[0.14em] text-[#827a70]">Total paid</span>
+              <strong class="font-serif text-[23px] font-medium tracking-[-0.04em]">€ 730.40</strong>
+            </div>
+            <footer class="mt-auto flex items-end justify-between">
+              <span class="font-mono text-[9px] uppercase leading-[1.5] tracking-[0.14em] text-[#827a70]">Paid · Wise · GBP</span>
+              <img class="h-[30px] w-[73px] object-contain" src="./images/icon-barcode.svg" alt="Receipt barcode" />
+            </footer>
+          </article>
+
+          <article class="absolute right-[6%] top-[26px] z-[2] flex h-[326px] w-[min(43%,338px)] rotate-[4deg] flex-col overflow-hidden rounded-[18px] border border-white/10 bg-gradient-to-br from-[#c44a20] via-[#a63b1b] to-[#963518] px-[21px] py-5 text-[#fff6e8] shadow-[0_13px_30px_rgba(67,45,28,0.11)] transition-transform duration-500 ease-out group-hover:translate-x-3 group-hover:-translate-y-1 group-hover:rotate-[8deg] max-lg:right-[4%] max-md:right-[3%] max-md:w-[45%] max-sm:relative max-sm:inset-auto max-sm:h-[326px] max-sm:w-full max-sm:max-w-[350px] max-sm:rotate-[2deg] max-sm:group-hover:translate-x-0 max-sm:group-hover:translate-y-0 max-sm:group-hover:rotate-[2deg] print:hidden motion-reduce:transition-none">
+            <header class="flex items-start justify-between">
+              <span class="font-mono text-[9px] uppercase leading-[1.5] tracking-[0.14em] text-white/75">Welcome card</span>
+              <img class="mt-px h-[39px] w-[39px]" src="./images/icon-sun.svg" alt="" />
+            </header>
+            <p class="mb-0 mt-[22px] font-serif text-[15px] italic text-[#f7d99b]">A note from your host,</p>
+            <h2 class="m-0 font-serif text-[29px] font-medium italic leading-[1.2]">Margaux.</h2>
+            <p class="mt-[17px] max-w-[265px] text-[11px] leading-[1.55] text-white/90">
+              We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat — Poivre — pretending not to notice you.
+            </p>
+            <div class="mt-auto grid gap-[3px]">
+              <span class="font-mono text-[9px] uppercase leading-[1.5] tracking-[0.14em] text-white/75">Room</span>
+              <strong class="font-serif text-[17px] font-medium">La Garrigue</strong>
+            </div>
+          </article>
+        </div>
+        <p class="mb-6 mt-0 flex items-center justify-center gap-[7px] font-mono text-[8px] uppercase tracking-[0.15em] text-[#827a70] max-sm:mb-[18px] max-sm:mt-[5px] print:hidden">
+          <span class="text-[#b7411b]">✦</span> Hover to fan <span class="text-[#b7411b]">✦</span>
+        </p>
+      </section>
+
+      <section class="grid grid-cols-3 gap-[17px] max-lg:gap-[11px] max-md:grid-cols-2 max-sm:grid-cols-1 print:hidden" aria-label="Helpful information">
+        <article class="min-h-[199px] scroll-mt-5 rounded-[14px] border border-[#e7e0d7] bg-white/60 px-[15px] py-[14px] shadow-[0_2px_4px_rgba(52,42,30,0.025)] max-lg:px-3 max-sm:min-h-[180px] max-sm:p-[15px]" id="arrival">
+          <header class="flex min-h-[33px] items-center gap-[7px]">
+            <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-[#b7411b]">
+              <img class="h-[19px] w-[19px]" src="./images/icon-key.svg" alt="" />
+            </span>
+            <span class="font-mono text-[10px] font-medium uppercase tracking-[0.14em] text-[#b7411b]">Arrival</span>
+            <span class="ml-auto font-serif text-[19px] leading-none text-[#b7411b]">01</span>
+          </header>
+          <h2 class="mb-[3px] mt-4 font-serif text-lg font-medium leading-[1.25] tracking-[-0.025em] max-sm:mt-[13px]">Check-in from 15:00</h2>
+          <p class="mb-[9px] mt-0 text-[10px] text-[#827a70]">Sat, 25 April</p>
+          <p class="mb-0 mt-[9px] text-[10px] leading-[1.5]">
+            Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
+          </p>
+        </article>
+
+        <article class="min-h-[199px] scroll-mt-5 rounded-[14px] border border-[#e7e0d7] bg-white/60 px-[15px] py-[14px] shadow-[0_2px_4px_rgba(52,42,30,0.025)] max-lg:px-3 max-sm:min-h-[180px] max-sm:p-[15px]" id="around-town">
+          <header class="flex min-h-[33px] items-center gap-[7px]">
+            <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-[#5268bb]">
+              <img class="h-[19px] w-[19px]" src="./images/icon-wifi.svg" alt="" />
+            </span>
+            <span class="font-mono text-[10px] font-medium uppercase tracking-[0.14em] text-[#5268bb]">WiFi</span>
+            <span class="ml-auto font-serif text-[19px] leading-none text-[#5268bb]">02</span>
+          </header>
+          <h2 class="mb-[3px] mt-4 font-serif text-lg font-medium leading-[1.25] tracking-[-0.025em] max-sm:mt-[13px]">Le Soleil · Guest</h2>
+          <p class="mb-[9px] mt-0 text-[10px] text-[#827a70]">Password below</p>
+          <dl class="mt-[10px] grid gap-1">
+            <div class="flex min-h-[25px] items-center justify-between gap-2 rounded-[7px] bg-[#f2eee8] px-2 py-1">
+              <dt class="font-mono text-[9px] uppercase tracking-[0.14em] text-[#827a70]">Network</dt>
+              <dd class="m-0 whitespace-nowrap text-[9px]">Le Soleil · Guest</dd>
+            </div>
+            <div class="flex min-h-[25px] items-center justify-between gap-2 rounded-[7px] bg-[#f2eee8] px-2 py-1">
+              <dt class="font-mono text-[9px] uppercase tracking-[0.14em] text-[#827a70]">Password</dt>
+              <dd class="m-0 flex items-center gap-[7px] whitespace-nowrap text-[9px]">
+                soleil-2026
+                <button class="rounded-[5px] bg-[#e7e1d8] px-[6px] py-[3px] font-mono text-[8px] uppercase text-[#625a50] hover:bg-[#ded5c9]" id="copy-password" type="button">Copy</button>
+              </dd>
+            </div>
+          </dl>
+          <p class="min-h-3 mb-0 mt-[3px] text-[9px] text-[#5268bb]" id="copy-status" aria-live="polite"></p>
+        </article>
+
+        <article class="min-h-[199px] scroll-mt-5 rounded-[14px] border border-[#e7e0d7] bg-white/60 px-[15px] py-[14px] shadow-[0_2px_4px_rgba(52,42,30,0.025)] max-lg:px-3 max-sm:min-h-[180px] max-sm:p-[15px]" id="breakfast">
+          <header class="flex min-h-[33px] items-center gap-[7px]">
+            <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-[#b54d73]">
+              <img class="h-[19px] w-[19px]" src="./images/icon-breakfast.svg" alt="" />
+            </span>
+            <span class="font-mono text-[10px] font-medium uppercase tracking-[0.14em] text-[#b54d73]">Breakfast</span>
+            <span class="ml-auto font-serif text-[19px] leading-none text-[#b54d73]">03</span>
+          </header>
+          <h2 class="mb-[3px] mt-4 font-serif text-lg font-medium leading-[1.25] tracking-[-0.025em] max-sm:mt-[13px]">Served 8 – 10:30</h2>
+          <p class="mb-[9px] mt-0 text-[10px] text-[#827a70]">On the terrace</p>
+          <p class="mb-0 mt-[9px] text-[10px] leading-[1.5]">
+            Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
